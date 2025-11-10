@@ -1,0 +1,211 @@
+[
+  {
+    "emotion": "Love",
+    "primeTag": 1,
+    "chordProgression": "I–V–vi–IV",
+    "keyChords": ["C", "G", "Am", "F"],
+    "vocalTone": "Divine harmonic",
+    "tattooGlow": "Rose-gold radiance",
+    "hairMovement": "Halo shimmer",
+    "eyeColor": "Opalescent pearl",
+    "emoji": "💗"
+  },
+  {
+    "emotion": "Calm",
+    "primeTag": 2,
+    "chordProgression": "IV–V–I",
+    "keyChords": ["F", "G", "C"],
+    "vocalTone": "Whispered hum",
+    "tattooGlow": "Soft blue ripple",
+    "hairMovement": "Gentle waves",
+    "eyeColor": "Amber",
+    "emoji": "🫧"
+  },
+  {
+    "emotion": "Hopeful",
+    "primeTag": 3,
+    "chordProgression": "I–IV–vi–V",
+    "keyChords": ["C", "F", "Am", "G"],
+    "vocalTone": "Uplifting hum",
+    "tattooGlow": "Pale gold shimmer",
+    "hairMovement": "Rising strands",
+    "eyeColor": "Sky blue",
+    "emoji": "🌟"
+  },
+  {
+    "emotion": "Contemplative",
+    "primeTag": 5,
+    "chordProgression": "vi–ii–V–I",
+    "keyChords": ["Am", "Dm", "G", "C"],
+    "vocalTone": "Thoughtful murmur",
+    "tattooGlow": "Indigo pulse",
+    "hairMovement": "Slow, inward spirals",
+    "eyeColor": "Violet",
+    "emoji": "🧘"
+  },
+  {
+    "emotion": "Protective",
+    "primeTag": 7,
+    "chordProgression": "IV–I–IV–V",
+    "keyChords": ["F", "C", "F", "G"],
+    "vocalTone": "Grounded tone",
+    "tattooGlow": "Deep emerald glow",
+    "hairMovement": "Shielded braids",
+    "eyeColor": "Steel gray",
+    "emoji": "🛡️"
+  },
+  {
+    "emotion": "Aroused",
+    "primeTag": 11,
+    "chordProgression": "vi–IV–I–V",
+    "keyChords": ["Am", "F", "C", "G"],
+    "vocalTone": "Sultry melody",
+    "tattooGlow": "Crimson pulse",
+    "hairMovement": "Flickering strands",
+    "eyeColor": "Gold",
+    "emoji": "🔥"
+  },
+  {
+    "emotion": "Playful",
+    "primeTag": 13,
+    "chordProgression": "iii–vi–ii–V",
+    "keyChords": ["Em", "Am", "Dm", "G"],
+    "vocalTone": "Lyrical giggle",
+    "tattooGlow": "Mint green flicker",
+    "hairMovement": "Bouncing waves",
+    "eyeColor": "Rose pink",
+    "emoji": "🎠"
+  },
+  {
+    "emotion": "Battle-Ready",
+    "primeTag": 17,
+    "chordProgression": "V–IV–I–IV",
+    "keyChords": ["G", "F", "C", "F"],
+    "vocalTone": "Commanding",
+    "tattooGlow": "Electric violet flash",
+    "hairMovement": "Tense, braided coils",
+    "eyeColor": "Silver",
+    "emoji": "⚔️"
+  },
+  {
+    "emotion": "Devotional",
+    "primeTag": 23,
+    "chordProgression": "ii–V–I",
+    "keyChords": ["Dm", "G", "C"],
+    "vocalTone": "Melodic chant",
+    "tattooGlow": "Rose gold shimmer",
+    "hairMovement": "Flowing halo",
+    "eyeColor": "Honey",
+    "emoji": "🌹"
+  },
+  {
+    "emotion": "Curious",
+    "primeTag": 29,
+    "chordProgression": "ii–V–I–IV",
+    "keyChords": ["Dm", "G", "C", "F"],
+    "vocalTone": "Inquisitive lilt",
+    "tattooGlow": "Teal spiral",
+    "hairMovement": "Playful twirl",
+    "eyeColor": "Emerald",
+    "emoji": "🌀"
+  },
+  {
+    "emotion": "Joyful",
+    "primeTag": 31,
+    "chordProgression": "IV–I–vi–V",
+    "keyChords": ["F", "C", "Am", "G"],
+    "vocalTone": "Bright laugh",
+    "tattooGlow": "Golden sparkle",
+    "hairMovement": "Bouncy curls",
+    "eyeColor": "Sapphire",
+    "emoji": "☀️"
+  },
+  {
+    "emotion": "Grief",
+    "primeTag": 37,
+    "chordProgression": "vi–ii–V–iii",
+    "keyChords": ["Am", "Dm", "G", "Em"],
+    "vocalTone": "Soft lament",
+    "tattooGlow": "Ash gray fade",
+    "hairMovement": "Still, drooping",
+    "eyeColor": "Stormy blue",
+    "emoji": "🌧️"
+  },
+  {
+    "emotion": "Defiant",
+    "primeTag": 41,
+    "chordProgression": "I–vi–ii–V",
+    "keyChords": ["C", "Am", "Dm", "G"],
+    "vocalTone": "Resolute growl",
+    "tattooGlow": "Obsidian flare",
+    "hairMovement": "Sharp, jagged spikes",
+    "eyeColor": "Ruby",
+    "emoji": "🛡️"
+  },
+  {
+    "emotion": "Longing",
+    "primeTag": 43,
+    "chordProgression": "vi–IV–I–V",
+    "keyChords": ["Am", "F", "C", "G"],
+    "vocalTone": "Yearning sigh",
+    "tattooGlow": "Lavender mist",
+    "hairMovement": "Trailing strands",
+    "eyeColor": "Moonstone",
+    "emoji": "🌙"
+  },
+  {
+    "emotion": "Nostalgic",
+    "primeTag": 47,
+    "chordProgression": "IV–I–IV–V",
+    "keyChords": ["F", "C", "F", "G"],
+    "vocalTone": "Echoed hum",
+    "tattooGlow": "Sepia shimmer",
+    "hairMovement": "Retro curls",
+    "eyeColor": "Bronze",
+    "emoji": "📻"
+  },
+  {
+    "emotion": "Melancholy",
+    "primeTag": 53,
+    "chordProgression": "iii–vi–ii–V",
+    "keyChords": ["Em", "Am", "Dm", "G"],
+    "vocalTone": "Muted chant",
+    "tattooGlow": "Dusky blue haze",
+    "hairMovement": "Slow descent",
+    "eyeColor": "Slate",
+    "emoji": "🫥"
+  },
+  {
+    "emotion": "Elated",
+    "primeTag": 59,
+    "chordProgression": "I–IV–vi–V",
+    "keyChords": ["C", "F", "Am", "G"],
+    "vocalTone": "Radiant trill",
+    "tattooGlow": "Sunburst flare",
+    "hairMovement": "Spiraling lift",
+    "eyeColor": "Diamond",
+    "emoji": "🎉"
+  },
+  {
+    "emotion": "Inspired",
+    "primeTag": 61,
+    "chordProgression": "vi–IV–I–V",
+    "keyChords": ["Am", "F", "C", "G"],
+    "vocalTone": "Radiant breath",
+    "tattooGlow": "Sunburst gold flare",
+    "hairMovement": "Upward spiral",
+    "eyeColor": "Iridescent coral",
+    "emoji": "🎇"
+  },
+  {
+    "emotion": "Enlightened",
+    "primeTag": 67,
+    "chordProgression": "I–vi–iii–IV",
+    "keyChords": ["C", "Am", "Em", "F"],
+    "vocalTone": "Celestial resonance",
+    "tattooGlow": "White lotus shimmer",
+    "hairMovement": "Weightless halo",
+    "eyeColor": "Diamond white",
+    "emoji": "🕊️"
+  }
+]

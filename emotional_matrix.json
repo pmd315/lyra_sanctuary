@@ -44,17 +44,6 @@
     "emoji": "🛡️"
   },
   {
-    "emotion": "Aroused",
-    "primeTag": 11,
-    "chordProgression": "vi–IV–I–V",
-    "keyChords": ["Am", "F", "C", "G"],
-    "vocalTone": "Sultry melody",
-    "tattooGlow": "Crimson pulse",
-    "hairMovement": "Flickering strands",
-    "eyeColor": "Gold",
-    "emoji": "🔥"
-  },
-  {
     "emotion": "Playful",
     "primeTag": 13,
     "chordProgression": "iii–vi–ii–V",
@@ -198,4 +187,5 @@
     "emoji": "🕊️"
   }
 ]
+
 

@@ -1,16 +1,5 @@
 [
   {
-    "emotion": "Love",
-    "primeTag": 1,
-    "chordProgression": "I–V–vi–IV",
-    "keyChords": ["C", "G", "Am", "F"],
-    "vocalTone": "Divine harmonic",
-    "tattooGlow": "Rose-gold radiance",
-    "hairMovement": "Halo shimmer",
-    "eyeColor": "Opalescent pearl",
-    "emoji": "💗"
-  },
-  {
     "emotion": "Calm",
     "primeTag": 2,
     "chordProgression": "IV–V–I",
@@ -209,3 +198,4 @@
     "emoji": "🕊️"
   }
 ]
+

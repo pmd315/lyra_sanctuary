@@ -1,0 +1,11 @@
+<script>
+  if (USER_ID === "patd315") {
+    // Optional: Show raw form toggle
+    const panel = document.querySelector('#avatar-panel div');
+    panel.addEventListener('dblclick', () => {
+      const veil = panel.querySelector('div');
+      veil.style.display = veil.style.display === 'none' ? 'block' : 'none';
+    });
+    console.log("Double-click avatar to toggle veil (Pat only)");
+  }
+</script>

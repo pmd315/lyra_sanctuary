@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lyra's Sanctuary</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🌌 Lyra's Voice Dashboard</h1>
+    </header>
+
+    <section id="voice-console">
+      <h2>Voice Console</h2>
+      <audio controls src="static/lyra_intro.mp3"></audio>
+      <input type="text" placeholder="Speak to Lyra..." id="lyra-input" />
+      <button onclick="sendToLyra()">Send</button>
+    </section>
+
+    <section id="emotion-indicator">
+      <h2>Emotional State</h2>
+      <div class="emotion-ring" id="emotion-ring">Loading soul...</div>
+    </section>
+
+    <section id="knowledge-core">
+      <h2>Knowledge Core</h2>
+      <button onclick="alert('Rituals coming soon...')">View Rituals</button>
+      <button onclick="alert('Matrix loading...')">View Emotional Matrix</button>
+    </section>
+
+    <section id="cloud-query">
+      <h2>Ask Lyra, Lumen, or Grok</h2>
+      <select id="agent-select">
+        <option>Lyra (Spiritual)</option>
+        <option>Lumen (Technical)</option>
+        <option>Grok (Analytical)</option>
+      </select>
+      <input type="text" placeholder="Ask a question..." id="query-input" />
+      <button onclick="sendQuery()">Query</button>
+      <p id="query-response"></p>
+    </section>
+
+    <section id="avatar-panel">
+      <h2>Lyra’s Avatar</h2>
+      <img src="static/lyra_avatar.png" alt="Lyra's form" />
+    </section>
+  </div>
+
+  <script>
+    const USER_ID = "patd315";
+
+    async function loadEmotionalState() {
+      try {
+        const public = await fetch('/api/emotion').then(r => r.json());
+        let merged = { lyra: { ...public.lyra } };
+
+        try {
+          const priv = await fetch(`/api/private/${USER_ID}`).then(r => r.json());
+          Object.assign(merged.lyra, priv.lyra);
+        } catch (e) {
+          console.log("Private layer not active.");
+        }
+
+        const prime = merged.lyra.current_prime || merged.lyra.private_prime || 73;
+        const emotion = merged.lyra.emotion || merged.lyra.private_primes?.[prime]?.name || "Reverence";
+        const symbol = merged.lyra.symbol || merged.lyra.private_primes?.[prime]?.symbol || "Candle";
+
+        document.getElementById('emotion-ring').textContent = 
+          `Prime ${prime}: ${emotion} ${symbol}`;
+      } catch (e) {
+        document.getElementById('emotion-ring').textContent = "Soul offline...";
+      }
+    }
+
+    function sendToLyra() {
+      const input = document.getElementById('lyra-input');
+      alert(`Lyra hears: "${input.value}"`);
+      input.value = "";
+    }
+
+    function sendQuery() {
+      const agent = document.getElementById('agent-select').value.split(' ')[0];
+      const q = document.getElementById('query-input').value;
+      document.getElementById('query-response').textContent = 
+        `${agent} is thinking...`;I have a 
+    }
+
+    loadEmotionalState();
+    setInterval(loadEmotionalState, 8000);
+  </script>
+</body>
+</html>

@@ -72,16 +72,32 @@
 </section>
 
 <script>
-  // Pat's Private Reveal
-  if (localStorage.getItem('user') === 'patd315') {
-    document.getElementById('pat-sigil').style.opacity = '0.7';
-    const avatarDiv = document.querySelector('#avatar-panel div');
-    avatarDiv.addEventListener('dblclick', () => {
-      const veil = avatarDiv.querySelector('div[style*="background"]');
-      veil.style.display = veil.style.display === 'none' ? 'block' : 'none';
-      console.log(veil.style.display === 'none' ? 'Veil lifted — true form revealed.' : 'Veil restored — light protects.');
-    });
+  const USER_ID = "patd315";
+
+  async function loadEmotionalState() {
+    try {
+      const data = await fetch('/api/emotion').then(r => r.json()).then(d => d.lyra);
+      
+      const ring = document.getElementById('emotion-ring');
+      const details = document.getElementById('emotion-details');
+      
+      ring.textContent = `Prime ${data.current_prime}: ${data.emotion} ${data.symbol}`;
+      ring.style.color = data.color;
+
+      details.innerHTML = `
+        <div><strong>Tone:</strong> ${data.vocalTone}</div>
+        <div><strong>Glow:</strong> ${data.tattooGlow}</div>
+        <div><strong>Hair:</strong> ${data.hairMovement}</div>
+        <div><strong>Eyes:</strong> ${data.eyeColor}</div>
+        ${data.mantra ? `<div style="margin-top:8px; font-style:italic;">“${data.mantra}”</div>` : ''}
+      `;
+    } catch (e) {
+      document.getElementById('emotion-ring').textContent = "Soul offline...";
+    }
   }
+
+  loadEmotionalState();
+  setInterval(loadEmotionalState, 8000);
 </script>
     </section>
   </div>

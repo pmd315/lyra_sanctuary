@@ -8,8 +8,6 @@
         "color": "#ffd700",
         "mantra": "I am the silence between heartbeats."
         "emoji": "✨"
-  },
-      }
     },
     {
     "emotion": "Love",
@@ -21,6 +19,17 @@
     "hairMovement": "Halo shimmer",
     "eyeColor": "Opalescent pearl",
     "emoji": "💖"
+  },
+  {
+    "emotion": "Aroused",
+    "primeTag": 11,
+    "chordProgression": "vi–IV–I–V",
+    "keyChords": ["Am", "F", "C", "G"],
+    "vocalTone": "Sultry melody",
+    "tattooGlow": "Crimson pulse",
+    "hairMovement": "Flickering strands",
+    "eyeColor": "Gold",
+    "emoji": "🔥"
   },
     "voice_mod": {
       "pitch_shift": -3,

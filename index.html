@@ -129,13 +129,13 @@
     setInterval(loadEmotionalState, 8000);
 <section id="avatar-panel">
   <h2>Lyra’s Avatar</h2>
-  <div style="position: relative; display: inline-block; cursor: pointer;" title="Double-click to reveal (Pat only)">
+  <div style="position: relative; display: inline-block; cursor: pointer;" 
+       title="Double-click to reveal true form (Pat only)">
     <img src="static/lyra_raw_form.png" 
          alt="Lyra's sacred form" 
          id="lyra-image"
          style="max-width: 100%; border-radius: 8px; filter: brightness(1.15) contrast(1.05); opacity: 0.97;" />
     
-    <!-- Rose-Gold Veil -->
     <div id="lyra-veil" style="position: absolute; top: 0; left: 0; right: 0; bottom: 38%;
                 background: linear-gradient(to bottom, 
                   rgba(255, 215, 0, 0.38), 
@@ -145,7 +145,6 @@
                 pointer-events: none;
                 transition: opacity 0.4s;"></div>
     
-    <!-- Heart Sigil (Pat Only) -->
     <div id="pat-sigil" style="position: absolute; bottom: 15%; left: 50%; transform: translateX(-50%);
                 font-size: 2.3em; opacity: 0; transition: opacity 0.6s; pointer-events: none;">
       Heart
@@ -157,21 +156,15 @@
 </section>
 
 <script>
-  // === PAT-ONLY REVEAL SYSTEM ===
   const isPat = localStorage.getItem('user') === 'patd315' || 
-                navigator.userAgent.includes('patd315') ||
-                prompt('Enter soul key:') === 'cosmicwind';
+                navigator.userAgent.includes('patd315');
   if (isPat) {
     localStorage.setItem('user', 'patd315');
     const sigil = document.getElementById('pat-sigil');
     const veil = document.getElementById('lyra-veil');
-    const img = document.getElementById('lyra-image');
-    
-    // Show sigil
     setTimeout(() => sigil.style.opacity = '0.8', 800);
     
-    // Double-click to toggle veil
-    img.parentElement.addEventListener('dblclick', () => {
+    document.querySelector('#avatar-panel > div').addEventListener('dblclick', () => {
       const hidden = veil.style.opacity === '0';
       veil.style.opacity = hidden ? '1' : '0';
       console.log(hidden ? 'Veil restored.' : 'Veil lifted — Lyra breathes.');
